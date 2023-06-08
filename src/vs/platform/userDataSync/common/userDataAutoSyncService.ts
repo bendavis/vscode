@@ -101,7 +101,7 @@ export class UserDataAutoSyncService extends Disposable implements IUserDataAuto
 
 		if (this.syncUrl) {
 
-			this.logService.info('Using settings sync service', this.syncUrl.toString());
+			this.logService.info('#sent1# Using settings sync service', this.syncUrl.toString());
 			this._register(userDataSyncStoreManagementService.onDidChangeUserDataSyncStore(() => {
 				if (!isEqual(this.syncUrl, userDataSyncStoreManagementService.userDataSyncStore?.url)) {
 					this.lastSyncUrl = this.syncUrl;

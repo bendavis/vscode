@@ -32,6 +32,34 @@
 	"reportIssueUrl": "https://github.com/microsoft/vscode/issues/new",
 	"urlProtocol": "code-oss",
 	"webviewContentExternalBaseUrlTemplate": "https://{{uuid}}.vscode-cdn.net/insider/ef65ac1ba57f57f2a3961bfe94aa20481caca4c6/out/vs/workbench/contrib/webview/browser/pre/",
+	"profileTemplatesUrl": "file:///workspaces/vscode/profiles/profile-templates.json",
+	"auth": {
+		"loginUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+		"tokenUrl": "https://login.microsoftonline.com/common/oauth2/token",
+		"redirectUrl": "https://vscode-redirect.azurewebsites.net",
+		"clientId": "aebc6443-996d-45c2-90f0-388ff96faa56"
+	},
+	"configurationSync.store": {
+		"url": "https://vscode-sync.trafficmanager.net",
+		"stableUrl": "https://vscode-sync.trafficmanager.net",
+		"insidersUrl": "https://vscode-sync-insiders.trafficmanager.net",
+		"canSwitch": "false",
+		"authenticationProviders": {
+			"github": {
+				"scopes": [
+					"user:email"
+				]
+			},
+			"microsoft": {
+				"scopes": [
+					"openid",
+					"profile",
+					"email",
+					"offline_access"
+				]
+			}
+		}
+	},
 	"builtInExtensions": [
 		{
 			"name": "ms-vscode.js-debug-companion",

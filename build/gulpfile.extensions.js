@@ -43,6 +43,7 @@ const compilations = [
 	'git-base/tsconfig.json',
 	'github-authentication/tsconfig.json',
 	'github/tsconfig.json',
+	'hacked-auth/tsconfig.json',
 	'grunt/tsconfig.json',
 	'gulp/tsconfig.json',
 	'html-language-features/client/tsconfig.json',

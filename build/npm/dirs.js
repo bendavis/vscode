@@ -20,6 +20,7 @@ const dirs = [
 	'extensions/git',
 	'extensions/git-base',
 	'extensions/github',
+	'extensions/hacked-auth',
 	'extensions/github-authentication',
 	'extensions/grunt',
 	'extensions/gulp',

@@ -486,10 +486,21 @@ export class UserDataSyncStoreClient extends Disposable {
 		this.addSessionHeaders(options.headers);
 
 		this.logService.trace('Sending request to server', { url, type: options.type, headers: { ...options.headers, ...{ authorization: undefined } } });
+		this.logService.debug('Sending request to server', { url, type: options.type, headers: { ...options.headers, ...{ authorization: undefined } } });
+		this.logService.error('Sending request to server', { url, type: options.type, headers: { ...options.headers, ...{ authorization: undefined } } });
+		this.logService.info('Sending request to server', { url, type: options.type, headers: { ...options.headers, ...{ authorization: undefined } } });
 
 		let context;
 		try {
+			this.logService.warn(JSON.stringify(url));
+			this.logService.warn(JSON.stringify(options));
+			this.logService.warn(JSON.stringify(token));
+			console.log('test');
+
 			context = await this.session.request(url, options, token);
+			this.logService.warn(JSON.stringify(context));
+			console.log(JSON.stringify(context));
+
 		} catch (e) {
 			if (!(e instanceof UserDataSyncStoreError)) {
 				let code = UserDataSyncErrorCode.RequestFailed;
