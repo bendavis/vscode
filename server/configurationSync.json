@@ -1,0 +1,13 @@
+"configurationSync.store": {
+	"url": "http://localhost:3000/",
+	"stableUrl": "http://localhost:3000/",
+	"insidersUrl": "http://localhost:3000/",
+	"canSwitch": "false",
+	"authenticationProviders": {
+		"hacked-auth": {
+			"scopes": [
+				"user:email"
+			]
+		}
+	}
+},
